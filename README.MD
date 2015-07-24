@@ -12,4 +12,4 @@ Start contributing to .NET Core documentation using the following steps:
 2. Edit, commit and push your changes.
 3. Create a push request to merge your change back to the repo.
 4. Wait your PR to be merged then your changes will be published to MSDN:
-http://msdnopint.redmond.corp.microsoft.com/en-us/openpublishing/corefx/intro-clr
+https://msdnopint.redmond.corp.microsoft.com/en-us/openpublishing/corefx/intro-clr
