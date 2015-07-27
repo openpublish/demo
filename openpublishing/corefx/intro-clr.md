@@ -881,5 +881,3 @@ Useful Links
 -   [Wikipedia Entry for the CLR](http://en.wikipedia.org/wiki/Common_Language_Runtime)
 -   [ECMA Standard for the Common Language Infrastructure CLI](dotnet-standards.md)
 -   [.NET Framework Design Guidelines](http://msdn.microsoft.com/en-us/library/ms229042.aspx)
--   [CoreCLR Repo Documentation](README.md)
-
