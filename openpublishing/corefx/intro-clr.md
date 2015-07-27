@@ -1,10 +1,6 @@
 Introduction to the Common Language Runtime (CLR)
 =================================================
 
-Hello world
-
-Hello!!!
-
 By Vance Morrison - 2007
 
 What is the Common Language Runtime (CLR)? To put it succinctly:
