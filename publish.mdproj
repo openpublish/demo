@@ -85,4 +85,11 @@
         Targets="Rebuild" 
         Projects="$(PackageRootFolder)build\net451\OpenPublishingBuild.mdproj" />
   </Target>
+  
+  <Target  
+      Name="Serve" 
+      DependsOnTargets="Build"> 
+      <Exec Command="&quot;$(PackageRootFolder)bin\preview.exe&quot; &quot;$(OutputFolder)&quot;"/> 
+  </Target>
+
 </Project>
