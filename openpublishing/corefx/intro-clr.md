@@ -1,7 +1,7 @@
 Introduction to the Common Language Runtime (CLR)
 =================================================
 
-[Test link](test.md)
+[Primer](primer.md)
 
 
 By Vance Morrison - 2007
