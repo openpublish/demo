@@ -6,6 +6,7 @@
   <PropertyGroup>
     <BuildTaskPackage>OpenPublishingBuild</BuildTaskPackage>
     <ToolsFolder>$(MSBuildThisFileDirectory)Tools\</ToolsFolder>
+    <OutputFolder Condition="'$(OutputFolder)' == ''" >$(MSBuildStartupDirectory)\xhtml</OutputFolder>
   </PropertyGroup>
 
   <PropertyGroup>
