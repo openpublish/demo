@@ -9,16 +9,18 @@ Quick Start
 Start contributing to .NET Core documentation using the following steps:
 
 1. Clone the repo:
-```
-git clone https://github.com/openpublish/demo.git
-```
+   ```
+   git clone https://github.com/openpublish/demo.git
+   ```
+
 2. Edit the Markdown files using your favorite Markdown editor.
 3. Commit and push your changes:
-```
-git add -u
-git commit -m "update doc"
-git push
-```
+   ```
+   git add -u
+   git commit -m "update doc"
+   git push
+   ```
+
 4. Wait for a moment and your changes will be automatically published to:
 https://msdnopint.redmond.corp.microsoft.com/en-us/openpublishing/corefx/intro-clr
 
