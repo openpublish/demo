@@ -123,7 +123,7 @@ APIs – the Compiler APIs and Workspaces APIs.
 
 ![image](images/alex-api-layers.png)
 
-Compiler APIs \~\~\~\~\~\~\~\~\~\~\~\~
+#### Compiler APIs
 
 The compiler layer contains the object models that correspond with
 information exposed at each phase of the compiler pipeline, both
