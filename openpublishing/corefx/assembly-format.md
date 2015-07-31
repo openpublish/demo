@@ -33,8 +33,6 @@ This is a very useful characteristic on Windows, where they can masquerade as na
 
 ![image](images/assembly-headers.png)
 
-![image](images/assembly-headers.png)
-
 Assembly Headers Assemblies headers from ECMA 335 II.25.1, Structure of the runtime file format.
 
 Processing the Assemblies
