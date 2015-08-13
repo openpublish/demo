@@ -1,6 +1,6 @@
 {
     "docset_files": [
-            "openpublishing/corefx/Docset.json"
+            "openpublishing/demo/Docset.json"
     ],
     "build_config": {
         "incremental": "true",
