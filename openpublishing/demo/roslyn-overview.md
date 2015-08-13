@@ -123,7 +123,7 @@ APIs – the Compiler APIs and Workspaces APIs.
 
 ![image](images/alex-api-layers.png)
 
-Compiler APIs \~\~\~\~\~\~\~\~\~\~\~\~
+#### Compiler APIs
 
 The compiler layer contains the object models that correspond with
 information exposed at each phase of the compiler pipeline, both
@@ -337,16 +337,13 @@ span, plus the span of any leading or trailing trivia.
 
 For example:
 
-``` {.sourceCode .c#}
-if (x > 3)
-{
+``` csharp
+      if (x > 3)
+      {
+||        // this is bad
+          |throw new Exception("Not right.");|  // better exception?||
+      }
 ```
-
-> || // this is bad
->
-> :   |throw new Exception("Not right.");| // better exception?||
->
-> > }
 
 The statement node inside the block has a span indicated by the single
 vertical bars (|). It includes the characters +throw new Exception(“Not

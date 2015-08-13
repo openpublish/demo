@@ -53,7 +53,7 @@ Large server programs are known to have heaps in the 10s of GBs. The GC
 employs a variety of techniques to reduce the amount of time that it
 blocks program execution. The primary approach is to do as much garbage
 collection work as possible on a background thread in a way that does
-not interfere with program execution. The GC also exposes a few ways for
+not interfere with program execution. The GCC also exposes a few ways for
 developers to influence its behavior, which can be quite useful to
 improve performance.
 

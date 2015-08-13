@@ -1,11 +1,12 @@
 <Project 
-    DefaultTargets="Publish"
+    DefaultTargets="Build"
     ToolsVersion="4.0"
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003"> 
 
   <PropertyGroup>
     <BuildTaskPackage>OpenPublishingBuild</BuildTaskPackage>
     <ToolsFolder>$(MSBuildThisFileDirectory)Tools\</ToolsFolder>
+    <OutputFolder Condition="'$(OutputFolder)' == ''" >$(MSBuildStartupDirectory)\xhtml</OutputFolder>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -85,4 +86,11 @@
         Targets="Rebuild" 
         Projects="$(PackageRootFolder)build\net451\OpenPublishingBuild.mdproj" />
   </Target>
+  
+  <Target  
+      Name="Serve" 
+      DependsOnTargets="Build"> 
+      <Exec Command="&quot;$(PackageRootFolder)bin\preview.exe&quot; &quot;$(OutputFolder)&quot;"/> 
+  </Target>
+
 </Project>
