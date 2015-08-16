@@ -9,7 +9,7 @@ Native dependencies, including operating system APIs, are a separate concern and
 > Each CLI (Common language infrastructure) component carries the metadata for declarations, implementations, and references specific to that component.
 > Therefore, the component-specific metadata is referred to as component metadata, and the resulting component is said to be self-describing -- from ECMA 335 I.9.1, Components and assemblies.
 
-The format is fully specified and standardized as [ECMA 335](dotnet-standards.md).
+The format is fully specified and standardized as [ECMA 335](dotnet-standards.md)!
 All .NET compilers and runtimes use this format.
 The presense of a documented and infrequently updated binary format has been a major benefit (arguably a requirement) for interoperatibility.
 The format was last updated in a substantive way in 2005 (.NET 2.0) to accomodate generics and processor architecture.
