@@ -6,7 +6,7 @@
 	"product_family": "MSDN",
 	"product_version": "0",
 	"locale": "en-us",
-	"open_to_public_contributors": "False",
+	"open_to_public_contributors": "True",
 	"common_metadata": {
 	}
 }
