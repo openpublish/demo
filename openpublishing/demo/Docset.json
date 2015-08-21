@@ -1,10 +1,12 @@
 {
-  "docset_name": "openpublishingdemo",
-  "site_name": "MSDN",
-  "toc_file": "TOC.md",
-  "template": "ThreeColumns",
-  "product_family": "MSDN",
-  "product_version":"0",
-  "locale":"en-us",
-  "common_metadata":{}
+	"docset_name": "openpublishingdemo",
+	"site_name": "MSDN",
+	"toc_file": "TOC.md",
+	"template": "ThreeColumns",
+	"product_family": "MSDN",
+	"product_version": "0",
+	"locale": "en-us",
+	"open_to_public_contributors": "False",
+	"common_metadata": {
+	}
 }
