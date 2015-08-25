@@ -1,18 +1,17 @@
 <Project 
     DefaultTargets="Build"
     ToolsVersion="4.0"
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003"> 
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <PropertyGroup>
     <BuildTaskPackage>OpenPublishingBuild</BuildTaskPackage>
     <ToolsFolder>$(MSBuildThisFileDirectory)Tools\</ToolsFolder>
-    <OutputFolder Condition="'$(OutputFolder)' == ''" >$(MSBuildStartupDirectory)\xhtml</OutputFolder>
   </PropertyGroup>
 
   <PropertyGroup>
     <PackageInstalled>True</PackageInstalled>
-    <PackageInstalled Condition="EXISTS('$(PackageRootFolder)build\net451\OpenPublishingBuild.props') != 'True'">False</PackageInstalled>
-    <PackageInstalled Condition="EXISTS('$(PackageRootFolder)build\net451\OpenPublishingBuild.mdproj') != 'True'">False</PackageInstalled>
+    <PackageInstalled Condition="EXISTS('$(PackageRootFolder)build\Net451\OpenPublishingBuild.props') != 'True'">False</PackageInstalled>
+    <PackageInstalled Condition="EXISTS('$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj') != 'True'">False</PackageInstalled>
   </PropertyGroup>
 
   <!-- nuget Restore Target-->
@@ -22,7 +21,7 @@
     <!-- file, packages.config, and nuget.exe. The rest can be boot strapped by the build process. -->
     <Error Condition="EXISTS('$(MSBuildThisFileDirectory)packages.config') != 'True'" Text="packages.config was not found at the expected location: $(MSBuildThisFileDirectory)." />
     <Error Condition="EXISTS('$(ToolsFolder)NuGet\NuGet.exe') != 'True'" Text="Nuget.exe was not found at the expected location: $(ToolsFolder)NuGet." />
-    
+
     <!-- Use NuGet to pull down any packages -->
     <PropertyGroup>
       <NuGetConfigFileArgument Condition="EXISTS('$(ToolsFolder)NuGet\NuGet.config') == 'True'">-ConfigFile &quot;$(ToolsFolder)NuGet\NuGet.config&quot;</NuGetConfigFileArgument>
@@ -64,17 +63,24 @@
 
     <MSBuild 
         Targets="Build" 
-        Projects="$(PackageRootFolder)build\net451\OpenPublishingBuild.mdproj" />
+        Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
 
   </Target>
 
+  <Target
+      Name="Serve"
+      DependsOnTargets="Build">
+
+    <Exec Command="start cmd /c &quot;$(PackageRootFolder)lib\Net451\preview\preview.exe $(OutputFolder)&quot;"/>
+  </Target>
+        
   <Target 
       Name="Clean"
       DependsOnTargets="RestorePackages">
 
     <MSBuild 
         Targets="Clean" 
-        Projects="$(PackageRootFolder)build\net451\OpenPublishingBuild.mdproj" />
+        Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
 
   </Target>
 
@@ -84,13 +90,7 @@
 
     <MSBuild 
         Targets="Rebuild" 
-        Projects="$(PackageRootFolder)build\net451\OpenPublishingBuild.mdproj" />
-  </Target>
-  
-  <Target  
-      Name="Serve" 
-      DependsOnTargets="Build"> 
-      <Exec Command="&quot;$(PackageRootFolder)bin\preview.exe&quot; &quot;$(OutputFolder)&quot;"/> 
+        Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
   </Target>
 
 </Project>
