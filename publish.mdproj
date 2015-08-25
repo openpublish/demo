@@ -1,4 +1,4 @@
-<Project 
+<Project
     DefaultTargets="Build"
     ToolsVersion="4.0"
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -57,39 +57,42 @@
   </Target>
 
   <!-- Build Target -->
-  <Target 
+  <Target
       Name="Build"
       DependsOnTargets="RestorePackages">
 
-    <MSBuild 
-        Targets="Build" 
+    <MSBuild
+        Targets="Build"
         Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
 
   </Target>
 
   <Target
       Name="Serve"
-      DependsOnTargets="Build">
-
-    <Exec Command="start cmd /c &quot;$(PackageRootFolder)lib\Net451\preview\preview.exe $(OutputFolder)&quot;"/>
-  </Target>
-        
-  <Target 
-      Name="Clean"
       DependsOnTargets="RestorePackages">
 
-    <MSBuild 
-        Targets="Clean" 
+    <MSBuild
+        Targets="Serve"
         Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
 
   </Target>
 
-  <Target 
+  <Target
+      Name="Clean"
+      DependsOnTargets="RestorePackages">
+
+    <MSBuild
+        Targets="Clean"
+        Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
+
+  </Target>
+
+  <Target
       Name="Rebuild"
       DependsOnTargets="RestorePackages">
 
-    <MSBuild 
-        Targets="Rebuild" 
+    <MSBuild
+        Targets="Rebuild"
         Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
   </Target>
 
