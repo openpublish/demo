@@ -1,4 +1,4 @@
-Introduction to the Common Language Runtime (CLR)
+Introduction to the Common Language Runtime (CLR) - Working Copy
 =================================================
 
 By Vance Morrison - 2007
