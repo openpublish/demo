@@ -1,7 +1,7 @@
 Introduction to the Common Language Runtime (CLR) - Working Copy
 =================================================
 
-Test - [a reference to a non-existing md file](non-existing.md)
+Test - [a reference to self](intro-clr.md)
 
 By Vance Morrison - 2007
 
