@@ -6,7 +6,7 @@ They enable you to componentize useful functionality into modules that can be us
 They can also be used as a means of loading functionality that is not needed or not known at application startup.
 Class libraries are described using the [.NET Assembly file format](assembly-format.md).
 
-There are three types of class libraries that you can use:
+There are three types of class libraries that you can use
 
 - **Platform-specific** class libraries have access to all the APIs in a given platform (e.g. .NET Framework, Xamarin iOS), but can only be used by apps and libraries that target that platform.
 - **Portable** class libraries have access to a subset of APIs, and can be used by apps and libraries that target multiple platforms.
