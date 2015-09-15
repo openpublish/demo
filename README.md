@@ -2,7 +2,7 @@ Welcome to .NET Core Documentation
 ==================================
 
 This is the repository of .NET Core documentation powered by MSDN Open Publishing.
-
+ 
 Quick Start
 -----------
 
