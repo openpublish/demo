@@ -1,6 +1,8 @@
 Introduction to the Common Language Runtime (CLR)
 =================================================
 
+Test - [a reference to self](intro-clr.md)
+
 By Vance Morrison - 2007
 
 What is the Common Language Runtime (CLR)? To put it succinctly:
