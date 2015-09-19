@@ -1,0 +1,6 @@
+{
+    "docset_files": [
+            "new/newschema/.openpublishing.build.docset.config.json",
+            "new/fenxu/.openpublishing.build.docset.config.json"
+    ]
+}
