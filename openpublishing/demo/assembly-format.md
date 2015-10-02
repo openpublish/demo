@@ -1,6 +1,5 @@
 .NET Assembly File Format
-==========================
-
+===========================
 
 The .NET platform defines a binary file format - "assembly" - that is used to fully-describe and contain .NET programs.
 Assemblies are used for the programs themselves as well as any dependent libraries.
