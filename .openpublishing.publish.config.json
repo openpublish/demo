@@ -1,18 +1,29 @@
 {
-    "build_entry_point": "",
-    "docsets_to_publish": [
-        {
-            "docset_name": "new_newschema",
-            "build_output_subfolder": "new/newschema",
-            "locale": "en-us",
-            "version": 0
-        },
-        {
-            "docset_name": "new_fenxu",
-            "build_output_subfolder": "new/fenxu",
-            "locale": "zh-cn",
-            "version": 0
-        }
-    ],
-    "notification_subscribers": ["fenxu@microsoft.com", "yih@microsoft.com", "humao@microsoft.com"]
+  "build_entry_point": "",
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+  "docsets_to_publish": [
+    {
+      "docset_name": "new_newschema",
+      "build_output_subfolder": "new/newschema",
+      "locale": "en-us",
+      "open_to_public_contributors": false,
+      "version": 0
+    },
+    {
+      "docset_name": "new_fenxu",
+      "build_output_subfolder": "new/fenxu",
+      "locale": "zh-cn",
+      "open_to_public_contributors": false,
+      "version": 0
+    }
+  ],
+  "notification_subscribers": [
+    "fenxu@microsoft.com",
+    "yih@microsoft.com",
+    "humao@microsoft.com"
+  ],
+  "continue_with_document_error": true,
+  "skip_source_output_uploading": false,
+  "need_generate_pdf_url_template": false
 }
